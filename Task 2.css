@@ -1,0 +1,124 @@
+html{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    height: 100vh;
+    font-family: "Karla", serif;
+    background-color: rgb(218, 218, 218);
+}
+.main{
+    background-color: white;
+    max-width: 80%;
+    height: fit-content;
+    margin: 5% auto;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section1{
+    padding: 1em 2em;
+    height: 40%;
+}
+.section1 h1{
+    margin: 0;
+    font-size: 5vh;
+    color:  hsl(179, 62%, 43%);
+}
+.subtitle{
+    font-size: 2.7vh;
+}
+.section1>h3{
+    color:  hsl(71, 73%, 54%);
+}
+.content{
+    font-size: 2.3vh;
+    line-height: 1.5;
+}
+.section1 p{
+    color:  hsl(218, 22%, 67%);
+}
+
+.section2{
+    display: flex;
+    flex-direction: row;
+    height: 60%;
+}
+.sec1, .sec2{
+    width: 50%;
+    color: white;
+}
+.sec1{
+    background-color: hsl(179, 96%, 33%);
+    border-radius: 0 0 0 15px;
+    padding: 1em 2em;
+}
+.section-price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+.section-price .price{
+    font-size: 5vh;
+    font-weight: bold;
+}
+.section-price .period{
+    font-size: 3vh;
+    color: hsl(179, 98%, 80%);
+}
+button{
+    display: block;
+    margin: auto;
+    padding: 0.75em;
+    width: 70%;
+    outline: none;
+    border: none;
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    font-size: 2.3vh;
+    font-weight: bold;
+    font-family: "Karla", serif;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    box-shadow: 0 0 8px 0 hsl(0, 0%, 35%);
+}
+button:hover{
+    background-color: hsl(92, 100%, 40%);
+}
+
+.sec2{
+    background-color: hsl(179, 62%, 43%);
+    border-radius: 0 0 15px 0;
+    padding: 1em 2em;
+}
+
+@media (max-width: 768px) {
+    body{
+        padding: 30px 0;
+    }
+    .main{
+        max-width: 93%;
+    }
+    .section1{
+        padding: 1em 2em;
+    }
+    .section1 h1{
+        font-size: 4vh;
+    }
+    .section2{
+        flex-direction: column;
+    }
+    .sec1, .sec2{
+        width: inherit;
+        border-radius: 0;
+    }
+    .sec2{
+        border-radius: 0 0 15px 15px;
+    }
+    button{
+        width: 90%;
+    }
+}
